@@ -7,8 +7,10 @@
       "projectType": "application",
       "schematics": {
         "@schematics/angular:component": {
-          "inlineTemplate": true,
-          "inlineStyle": true,
+         //na criação do componente, os ficheiros html e css estarão em ficheiros separados 
+          "inlineTemplate": false,
+          "inlineStyle": false,
+          //com inline true, tanto ficheiro html como css estariam dentro do ficheiro typescript
           "skipTests": true
         },
         "@schematics/angular:class": {
@@ -54,6 +56,7 @@
               "src/assets"
             ],
             "styles": [
+              "./node_modules/@angular/material/prebuilt-themes/indigo-pink.css",
               "src/styles.css"
             ],
             "scripts": []
