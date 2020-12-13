@@ -2,7 +2,7 @@ import { Product } from './product.model';
 import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 import {MatSnackBar} from '@angular/material/snack-bar'
-import { Observable } from 'rxjs';
+import { Observable, EMPTY } from 'rxjs';
 @Injectable({
   providedIn: 'root'
 })
@@ -24,5 +24,13 @@ export class ProductService {
   //inserir no backend o produto
   create(product: Product): Observable<Product>{
     return this.http.post<Product>(this.baseUrl,product)
+  }
+
+  /*read(): Observable<Product[]>{
+    return this.http.get<Product>(this.baseUrl,product)
+  }*/
+  read(): Observable<Product[]> {
+    return this.http.get<Product[]>(this.baseUrl)
+    
   }
 }

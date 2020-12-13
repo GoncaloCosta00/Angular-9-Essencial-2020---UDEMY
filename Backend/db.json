@@ -19,6 +19,16 @@
       "name": "produto teste",
       "price": 123,
       "id": 4
+    },
+    {
+      "name": "teste",
+      "price": "123",
+      "id": 5
+    },
+    {
+      "name": "teste",
+      "price": "222",
+      "id": 6
     }
   ]
 }
