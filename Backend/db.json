@@ -1,0 +1,19 @@
+{
+  "products": [
+    {
+      "id": 1,
+      "name": "Caneta BIC preta",
+      "price": 1.5
+    },
+    {
+      "id": 2,
+      "name": "PC",
+      "price": 995.99
+    },
+    {
+      "id": 3,
+      "name": "Telemovel",
+      "price": 450
+    }
+  ]
+}
